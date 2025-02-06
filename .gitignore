@@ -1,0 +1,10 @@
+*.jpg
+
+bin/
+obj/
+*.sln
+*.csproj*
+
+.vs/
+.angular/
+node_modules/
