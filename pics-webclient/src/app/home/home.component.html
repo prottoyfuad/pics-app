@@ -1,0 +1,26 @@
+
+<section class="angular-logo" class="logout">
+    <div>
+        <button type="submit" (click)="logOut()">
+            Log out
+        </button>
+    </div>
+</section>
+
+@if (images.length > 0) {
+    <section class="images">
+        @for (image of images; track image.fileName) {
+            <section class="image-info">
+                <img class="image"
+                    [src]="'data:image/jpg;base64, ' + image.fileData" 
+                    alt="Photo of '{{ image.fileName }}'" />
+                <!-- <p class="image-name">{{ image.fileName }}</p> -->
+            </section>
+        }
+    </section>
+}
+<section class="center">
+    <p>{{default}}</p>
+</section>
+
+

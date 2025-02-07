@@ -1,0 +1,22 @@
+
+<section class="login-prompt">
+    <div>
+        <input type="text" placeholder="Username" [(ngModel)]="user.username">
+    </div>
+    <div>
+        <input type="password" placeholder="Password" [(ngModel)]="user.password">
+    </div>
+    <div>
+        <p> {{ alert }} </p>
+    </div>
+    <div>
+        <button type="submit" (click)="login()">
+            Log in
+        </button>
+    </div>
+    <div>
+        <button type="submit" (click)="goToPage('signup')">
+            Don't have an account? Sign up
+        </button>
+    </div>
+</section>
